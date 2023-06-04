@@ -15,7 +15,18 @@ This program is for filling QEC of the University.
 
 4. In the developer tools window, find the "Console" tab and click on it.
 
-5. Copy the JavaScript code provided above.
+5. Copy the JavaScript code provided below or from the above code.js File.
+```
+const radioInputs = document.querySelectorAll("input[type='radio'][value='5']");
+radioInputs.forEach(input => input.click());
+
+const textAreas = document.querySelectorAll("textarea");
+const textToAdd = "This is the text to add.";
+
+textAreas.forEach(textArea => {
+  textArea.value += textToAdd;
+});
+```
 
 6. Paste the code into the console of the developer tools.
 
